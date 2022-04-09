@@ -7,7 +7,7 @@ metadata:
   name: test
   namespace: test
 spec:
-  replicas: 2
+  replicas: 
   selector:
     matchLabels:
       app: test

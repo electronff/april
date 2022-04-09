@@ -12,10 +12,7 @@ spec:
     matchLabels:
       app: test
   strategy:
-    rollingUpdate:
-      maxSurge: 25%
-      maxUnavailable: 25%
-    type: RollingUpdate
+    type: rollingUpdate
   template:
     metadata:
       creationTimestamp: null
@@ -23,7 +20,7 @@ spec:
         app: test
     spec:
       containers:
-      - image: nginx:1.14.2
+      - image: nginx
         name: nginx
         resources: {}
 status: {}
